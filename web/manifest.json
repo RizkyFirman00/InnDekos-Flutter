@@ -1,0 +1,35 @@
+{
+    "name": "inndekos_flutter",
+    "short_name": "inndekos_flutter",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "This application helps users easily find boarding houses (indekos) near their current location or a desired location. Utilizing location-based technology, users can quickly discover boarding house options that meet their needs and preferences, such as proximity to work, campus, or essential facilities.  In addition, the app offers users the flexibility to contribute by adding new boarding house listings. This feature allows other users to access a wider and more up-to-date selection of places to stay. Each new listing undergoes a verification process to ensure the quality and accuracy of the information. This app is designed to provide convenience and ease for anyone searching for accommodation, while fostering an active community of users who share boarding house information.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
