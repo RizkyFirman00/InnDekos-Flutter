@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class LoginCard extends StatelessWidget {
+class RegisterCard extends StatelessWidget {
   final VoidCallback onSwitch;
 
-  const LoginCard({super.key, required this.onSwitch});
+  const RegisterCard({super.key, required this.onSwitch});
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +11,11 @@ class LoginCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          "Selamat Datang,",
+          "Silahkan Buat Akun,",
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
         ),
         const Text(
-          "Loginnya jangan pake akun tetangga ya...",
+          "Jangan masukin data tetangga ya...",
           style: TextStyle(fontSize: 14, fontWeight: FontWeight.w100),
         ),
         const SizedBox(
@@ -27,6 +27,36 @@ class LoginCard extends StatelessWidget {
         ),
         Column(
           children: [
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Email',
+                labelStyle: const TextStyle(fontWeight: FontWeight.w900),
+                filled: true,
+                fillColor: Colors.grey[300],
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                  borderSide: BorderSide.none,
+                ),
+                contentPadding: const EdgeInsets.symmetric(
+                    vertical: 15.0, horizontal: 20.0),
+              ),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'No Telepon',
+                labelStyle: const TextStyle(fontWeight: FontWeight.w900),
+                filled: true,
+                fillColor: Colors.grey[300],
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                  borderSide: BorderSide.none,
+                ),
+                contentPadding: const EdgeInsets.symmetric(
+                    vertical: 15.0, horizontal: 20.0),
+              ),
+            ),
+            const SizedBox(height: 10),
             TextField(
               decoration: InputDecoration(
                 labelText: 'Username',
@@ -73,7 +103,7 @@ class LoginCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Login",
+                    "Register",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w700,
@@ -91,7 +121,7 @@ class LoginCard extends StatelessWidget {
             child: ElevatedButton(
               onPressed: onSwitch,
               child: const Text(
-                "Belum punya akun?",
+                "Sudah punya akun?",
                 style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w100,
